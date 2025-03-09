@@ -56,7 +56,7 @@ As an advanced setting, you can include `userData` to your API request that will
 ### Output
 
 Output is available as a raw JSON or aggregated data shown in a table. Here you see the results of the input used as an example above.
-![The output in a table](https://drive.google.com/file/d/1g6-BLj237bzYi1xrNY7smwCBxfJoxd8V/view?usp=sharing)
+![The output in the table](https://drive.google.com/file/d/1g6-BLj237bzYi1xrNY7smwCBxfJoxd8V/view?usp=sharing "table output")
 
 [^firstnote]: The web scraper is currently named a bit differently, but I decided to stick to my version all over the README. 
 [^secondnote]: Once a user changes anything in the URL fields, the button renames as **Save & Start**. When a user opens the actor for the first time, he definitely needs to insert his URLs, so it would be the correct name of the button in this procedure.
