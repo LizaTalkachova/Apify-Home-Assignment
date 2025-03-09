@@ -35,7 +35,7 @@ You can either paste the accomodation URL and set up search criteria in settings
 
 ```
 {
-    "maxReviewsPerHotel": 100,
+    "maxReviewsPerHotel": 10,
     "sortBy": "Most recent",
     "startUrls": [
         {
@@ -49,6 +49,14 @@ You can either paste the accomodation URL and set up search criteria in settings
     ]
 }
 ```
+In this example, you request for 10 reviews for the Hotel Quirinale in Rome starting from the most recent ones. 
+
+As an advanced setting, you can include `userData` to your API request that will be shown in the output as `customData`. You may use this data to easily identify reviews according to accomodation.
+
+### Output
+
+Output is available as a raw JSON or aggregated data shown in a table. Here you see the results of the input used as an example above.
+![The output in a table](https://drive.google.com/file/d/1g6-BLj237bzYi1xrNY7smwCBxfJoxd8V/view?usp=sharing)
 
 [^firstnote]: The web scraper is currently named a bit differently, but I decided to stick to my version all over the README. 
 [^secondnote]: Once a user changes anything in the URL fields, the button renames as **Save & Start**. When a user opens the actor for the first time, he definitely needs to insert his URLs, so it would be the correct name of the button in this procedure.
