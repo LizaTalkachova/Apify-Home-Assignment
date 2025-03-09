@@ -1,9 +1,9 @@
 # Expedia & Hotels Review Scraper
-## What is Expedia & Hotels Review Scraper? 
+🗒️ ## What is Expedia & Hotels Review Scraper? 
 
-With the help of the web scraper, you can extract reviews for different types of accomodation listed on Expedia.com and Hotels.com. Select any specific accomodation on either of portals, copy its URL, paste it on Apify Console, and enjoy a full report on all the reviews for the chosed accomodation.
+With the help of the web scraper, you can extract reviews for different types of accomodation listed on **Expedia.com** and **Hotels.com**. Select any specific accomodation on either of portals, copy its URL, paste it on Apify Console, and enjoy a full report on all the reviews for the chosed accomodation.
 
-Apify Console uses API to make a request to Expedia and Hotels portals databases and to extract information based on your criteria. 
+Apify Console uses **API** to make a request to Expedia and Hotels portals databases and to extract information based on your criteria. 
 
 ## Why might you need the Expedia & Hotels Review Scraper? 
 
@@ -19,7 +19,7 @@ Apify Console uses API to make a request to Expedia and Hotels portals databases
 |Review text|Accomodation name|
 |Review date|Accomodation rate|
 |Reviewer's name|Accomodation host's response|
-|Duration and purpose of stay|Reviewer's country of origin|
+|Duration and purpose of stay|Reviewer's country of origin| [^fourthnote]
 
 ## Is the Expedia & Hotels Review Scraper free to use?
 
@@ -208,14 +208,28 @@ Our [travel domain scrapers](https://apify.com/store/categories/travel) are ethi
 
 Do not scrape personal data unless you have a legitimate reason for it. If you're unsure whether your reason is leitimate, we recommend you to consult lawyers. Read our blog post on [the legality of web scraping](https://blog.apify.com/is-web-scraping-legal/) and [ethical scrapting](https://blog.apify.com/what-is-ethical-web-scraping-and-how-do-you-do-it/) to learn more.
 
-### 
+### Can I use Apify API to work with the Actor?
+
+Yes, Apify has rich public API library of RESTful endpoints. 
+
+To access the API using Node.js, use the `apify-client` NPM package. To access the API using Python, use the `apify-client` PyPI package.
+
+### Can I integrate the actor with other tools?
+
+We offer various tools which you can integrate the actor with: from native Apify tools to AI ecosystems or other popular tools, such as Gmail, Slack, GitHub, Flowise. You can find all the options [on the **Integrations** tab](https://console.apify.com/actors/4zyibEJ79jE7VXIpA/integrations) 
+
+Integration tools like Zapier or Make allow leveraging data you receive via web scrapers in the most efficient ways.
+
+You also can add your custom webhook to receive data once the Actor performs an action. 
 
 ## Scrapers you might also like
 
+|                                                                              |                                                                                |
+|------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Booking Reviews Scraper](https://apify.com/voyager/booking-reviews-scraper) | [Tripadvisor Reviews Scraper](https://apify.com/maxcopell/tripadvisor-reviews) |
 | [Booking Scraper](https://apify.com/voyager/booking-scraper) | [Airbnb Scraper](https://apify.com/tri_angle/airbnb-scraper) |
 | [Skyscanner Flight✈️](https://apify.com/jupri/skyscanner-flight) | [Ryanair Scraper](https://apify.com/epctex/ryanair-scraper) |
-| [Google Maps Extractor](https://apify.com/compass/google-maps-extractor) | [Yelp Scraper](https://apify.com/tri_angle/yelp-scraper) |
+| [Google Maps Extractor](https://apify.com/compass/google-maps-extractor) | [Yelp Scraper](https://apify.com/tri_angle/yelp-scraper) | [^fifthnote]
 
 ## Do you want to build your own scraper?
 
@@ -228,5 +242,5 @@ We're constantly improving the performance of our Actors. If you have any techni
 [^firstnote]: The web scraper is currently named a bit differently, but I decided to stick to my version all over the README. 
 [^secondnote]: Once a user changes anything in the URL fields, the button renames as **Save & Start**. When a user opens the actor for the first time, he definitely needs to insert his URLs, so it would be the correct name of the button in this procedure.
 [^thirdnote]: I would include a screenshot of the table with the results, but it doesn't look quite attractive due to the absense of the data in some columns. It would also be good if I could define which columns to show in the table (I know it is possible for export and preview mode, but seems not in the showing mode).
-
-
+[^fourthnote]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
+[^fifthnote] As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
