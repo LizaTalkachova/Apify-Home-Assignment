@@ -12,14 +12,14 @@ Apify Console uses **API** to make a request to Expedia and Hotels portals datab
 * 📝 **Industry insights for businesses and bloggers**: Analyze travel trends and create engaging content.
 * 🌴 **Enhancing customer service and marketing**: Use review data to optimize advertising.
 
-## ℹ️ What data can you receive via the Expedia & Hotels Review Scraper?
+## ℹ️ What data can you receive via the Expedia & Hotels Review Scraper? [^notefirst]
 
 |           |                 |
 |-----------|-----------------|
 |Review text|Accommodation name|
 |Review date|Accommodation rate|
 |Reviewer's name|Accommodation host's response|
-|Duration and purpose of stay|Reviewer's country of origin| [^notefirst]
+|Duration and purpose of stay|Reviewer's country of origin| 
 
 ## 💸 Is the Expedia & Hotels Review Scraper free to use?
 
@@ -220,7 +220,7 @@ Do not scrape personal data unless you have a legitimate reason for it. If you'r
 
 ### Can I use Apify API to work with the Actor?
 
-Yes, Apify has rich public API library of RESTful endpoints. 
+Yes, Apify has rich public API library of **RESTful** endpoints. 
 
 To explore different API clients, click **API** > **API clients** on the [main Expedia & Hotels Review Scraper page](https://console.apify.com/actors/4zyibEJ79jE7VXIpA/input).
 
@@ -228,9 +228,9 @@ Refer to [Apify API documentation](https://docs.apify.com/api/v2) for the list o
 
 ### Can I integrate the actor with other tools?
 
-We offer various tools which you can integrate the actor with: from native Apify tools to AI ecosystems or other popular tools, such as Gmail, Slack, GitHub, Flowise. You can find all the options [on the **Integrations** tab](https://console.apify.com/actors/4zyibEJ79jE7VXIpA/integrations) 
+We offer various tools which you can integrate the actor with: from native Apify tools to AI ecosystems or other popular tools, such as [Gmail](https://mail.google.com/), [Slack](https://slack.com/), [GitHub](https://github.com/), [Flowise](https://flowiseai.com/). You can find all the options [on the **Integrations** tab](https://console.apify.com/actors/4zyibEJ79jE7VXIpA/integrations) 
 
-Integration tools like Zapier or Make allow leveraging data you receive via web scrapers in the most efficient ways.
+Integration tools like [Zapier](https://zapier.com/) or [Make](https://www.make.com/en) allow leveraging data you receive via web scrapers in the most efficient ways.
 
 You also can add your custom webhook to receive data once the Actor performs an action. 
 
