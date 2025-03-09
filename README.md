@@ -208,7 +208,7 @@ Yes, you can define how often the Actor will run. Read more about [a schedule](h
 
 ### How long is the output data available in Apify Console?
 
-We store records of the last 10 runs of *all* the actors until you delete them. The rest is stored for the number of days according to your pricing plan. Read more about [storages](https://docs.apify.com/platform/storage/usage#data-retention) so you never lose the data.
+We store records of the last 10 runs of *all* the actors until you delete them. The rest is stored for the number of days according to your pricing plan. You can always upgrade the plan [in your Apify Console account](https://console.apify.com/billing/limits). Read more about [storages](https://docs.apify.com/platform/storage/usage#data-retention) so you never lose the data.
 
 ### Is it legal to scrape accomodation reviews data?
 
