@@ -14,10 +14,10 @@ Apify Console uses API to make a request to Expedia and Hotels portals databases
 
 ## What data can you receive via the Expedia & Hotels Review Scraper?
 
-| Review text | Accomodation name |
-| Review date | Accomodation rate |
-| Reviewer's name | Accomodation host's response |
-| Duration and purpose of stay | Reviewer's country of origin |
+|Review text|Accomodation name|
+|Review date|Accomodation rate|
+|Reviewer's name|Accomodation host's response|
+|Duration and purpose of stay|Reviewer's country of origin|
 
 ## Is the Expedia & Hotels Review Scraper free to use?
 
