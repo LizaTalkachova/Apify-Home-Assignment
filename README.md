@@ -253,4 +253,4 @@ We're constantly improving the performance of our Actors. If you have any techni
 [^secondnote]: Once a user changes anything in the URL fields, the button renames as **Save & Start**. When a user opens the actor for the first time, he definitely needs to insert his URLs, so it would be the correct name of the button in this procedure.
 [^thirdnote]: I would include a screenshot of the table with the results, but it doesn't look quite attractive due to the absense of the data in some columns. It would also be good if I could define which columns to show in the table (I know it is possible for export and preview mode, but seems not in the showing mode).
 [^fourthnote]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
-[^fifthnote] As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
+[^fifthnote]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
