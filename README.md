@@ -15,7 +15,6 @@ Apify Console uses API to make a request to Expedia and Hotels portals databases
 ## What data can you receive via the Expedia & Hotels Review Scraper?
 
 | First Header  | Second Header |
-| ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
