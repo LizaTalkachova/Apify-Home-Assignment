@@ -19,29 +19,29 @@ Apify Console uses **API** to make a request to Expedia and Hotels portals datab
 |Review text|Accommodation name|
 |Review date|Accommodation rate|
 |Reviewer's name|Accommodation host's response|
-|Duration and purpose of stay|Reviewer's country of origin| [^fourthnote]
+|Duration and purpose of stay|Reviewer's country of origin| [^notefirst]
 
 ## 💸 Is the Expedia & Hotels Review Scraper free to use?
 
-This Actor is [**paid per result**](https://docs.apify.com/platform/actors/running/actors-in-store#pay-per-result): it charges $1.00 for each 1,000 items in the output. You don't pay anything for using Apify Console.
+This Actor is [**paid per result**](https://docs.apify.com/platform/actors/running/actors-in-store#pay-per-result): it charges $1.00 for each 1,000 items in the output. You don't pay anything for using Apify Console. You can watch your expenses [in the **Billing** section](https://console.apify.com/billing/current-period).
 
 ## ⏯️ How to use the Expedia & Hotels Review Scraper?
 
 Apify Console is a perfect tool to use web scrapes as you don't need to go deep into technical details to receive needed data. To start using the web scraper, do the following:
 
 1. [Create an account](https://console.apify.com/sign-up) in Apify Console. 
-2. Open the [Expedia & Hotels Review Scraper Actor](https://apify.com/tri_angle/expedia-hotels-com-reviews-scraper) [^firstnote].
+2. Open the [Expedia & Hotels Review Scraper Actor](https://apify.com/tri_angle/expedia-hotels-com-reviews-scraper) [^notesecond].
 3. In the **Expedia or Hotels.com URLs** section, add as many accommodation URLs, as you want to get reviews for. 
-4. Click **Save & Start** [^secondnote]. The Actor starts collecting information.
+4. Click **Save & Start** [^notethird]. The Actor starts collecting information.
 5. Wait until the run gets the **Successful** status, and open the **Output** tab to see the results.
 
 ### Input
 
-You can either paste the accommodation URL and set up search criteria in settings, or use the JSON request. [^sixthnote] [^seventhnote]
+You can either paste the accommodation URL and set up search criteria in settings, or use the JSON request. [^notefourth] [^notefifth]
 
 ```
 {
-    "maxReviewsPerHotel": 3, //The number of records you will receive per run
+    "maxReviewsPerHotel": 3, //The number of records you will receive per hotel
     "sortBy": "Most recent", //The sort order
     "startUrls": [
         {
@@ -63,7 +63,7 @@ As an advanced setting, you can include `userData` to your API request that will
 
 ### Output
 
-Output is available as a raw JSON or aggregated data shown in a table. Here you see one of three reviews for the Andaz Hotel in the JSON format. [^thirdnote]
+Output is available as a raw JSON or aggregated data shown in a table. Here you see one of three reviews for the Andaz Hotel in the JSON format. [^notesixth]
 
 ```
 [
@@ -200,13 +200,9 @@ You can select specific data to export, set a limit of records, set a number of 
 
 ### Limitations
 
-
+You can set a limit for the number of records per run. It is useful if you want to control your budget for the specific actor as you won't be charged for records that exceed the limit. To do it, open the Expedia & Hotels Review Scraper > the **Input** tab. Open **Run options**, and set the maximum charged results.
 
 ## ❓ FAQ
-
-### My run works slowly or crashes often. How can I make it work?
-
-Before running the Actor the next time, try to leverage resources such as memory. You also can add a timeout.  [Read more](https://docs.apify.com/platform/actors/running/usage-and-resources) about usage and resources.
 
 ### Can I schedule the Actor?
 
@@ -238,6 +234,12 @@ Integration tools like Zapier or Make allow leveraging data you receive via web 
 
 You also can add your custom webhook to receive data once the Actor performs an action. 
 
+## 💡 Troubleshooting
+
+### My run works slowly or crashes often. How can I make it work?
+
+Before running the Actor the next time, try to leverage resources such as memory. You also can add a timeout.  [Read more](https://docs.apify.com/platform/actors/running/usage-and-resources) about usage and resources.
+
 ## 📓 Scrapers you might also like
 
 |                                                                              |                                                                                |
@@ -245,7 +247,7 @@ You also can add your custom webhook to receive data once the Actor performs an 
 | [Booking Reviews Scraper](https://apify.com/voyager/booking-reviews-scraper) | [Tripadvisor Reviews Scraper](https://apify.com/maxcopell/tripadvisor-reviews) |
 | [Booking Scraper](https://apify.com/voyager/booking-scraper) | [Airbnb Scraper](https://apify.com/tri_angle/airbnb-scraper) |
 | [Expedia Hotels 3.0a](https://apify.com/jupri/expedia-hotels) | [Hotel Review Aggregator](https://apify.com/tri_angle/hotel-review-aggregator) |
-| [Google Maps Extractor](https://apify.com/compass/google-maps-extractor) | [Yelp Scraper](https://apify.com/tri_angle/yelp-scraper) | [^fifthnote]
+| [Google Maps Extractor](https://apify.com/compass/google-maps-extractor) | [Yelp Scraper](https://apify.com/tri_angle/yelp-scraper) | [^noteseventh]
 
 ## 🛠️ Do you want to build your own scraper?
 
@@ -255,10 +257,10 @@ Are you missing data that you want to receive? You can always build your own scr
 
 We're constantly improving the performance of our Actors. If you have any technical feedback or face a bug or malfunction in the Actor's work, feel free to report it by creating a new issue [on the **Issues** tab in Apify Console](https://console.apify.com/actors/4zyibEJ79jE7VXIpA/issues).
 
-[^firstnote]: The web scraper is currently named a bit differently, but I decided to stick to my version all over the README. 
-[^secondnote]: Once a user changes anything in the URL fields, the button renames as **Save & Start**. When a user opens the actor for the first time, he definitely needs to insert his URLs, so it would be the correct name of the button in this procedure.
-[^thirdnote]: I would include a screenshot of the table with the results, but it doesn't look quite attractive due to the absence of the data in some columns. It would also be good if I could define which columns to show in the table (I know it is possible for export and preview mode, but seems not in the showing mode).
-[^fourthnote]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
-[^fifthnote]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
-[^sixthnote]: In the JSON code block, I left comments on each parameter to let users understand what the input means.
-[^seventhnote]: I'm not sure the doWeEndorseIt parameter stands for the user data, but I had to leave a comment for the sake of consistency.
+[^notefirst]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
+[^notesecond]: The web scraper is currently named a bit differently, but I decided to stick to my version all over the README. 
+[^notethird]: Once a user changes anything in the URL fields, the button renames as **Save & Start**. When a user opens the actor for the first time, he definitely needs to insert his URLs, so it would be the correct name of the button in this procedure.
+[^notefourth]: In the JSON code block, I left comments on each parameter to let users understand what the input means.
+[^notefifth]: I'm not sure the doWeEndorseIt parameter stands for the user data, but I had to leave a comment for the sake of consistency.
+[^notesixth]: I would include a screenshot of the table with the results, but it doesn't look quite attractive due to the absence of the data in some columns. It would also be good if I could define which columns to show in the table (I know it is possible for export and preview mode, but seems not in the showing mode).
+[^noteseventh]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
