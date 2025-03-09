@@ -240,14 +240,14 @@ You also can add your custom webhook to receive data once the Actor performs an 
 
 Before running the Actor the next time, try to leverage resources such as memory. You also can add a timeout.  [Read more](https://docs.apify.com/platform/actors/running/usage-and-resources) about usage and resources.
 
-## 📓 Scrapers you might also like
+## 📓 Scrapers you might also like [^noteseventh]
 
 |                                                                              |                                                                                |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Booking Reviews Scraper](https://apify.com/voyager/booking-reviews-scraper) | [Tripadvisor Reviews Scraper](https://apify.com/maxcopell/tripadvisor-reviews) |
 | [Booking Scraper](https://apify.com/voyager/booking-scraper) | [Airbnb Scraper](https://apify.com/tri_angle/airbnb-scraper) |
 | [Expedia Hotels 3.0a](https://apify.com/jupri/expedia-hotels) | [Hotel Review Aggregator](https://apify.com/tri_angle/hotel-review-aggregator) |
-| [Google Maps Extractor](https://apify.com/compass/google-maps-extractor) | [Yelp Scraper](https://apify.com/tri_angle/yelp-scraper) | [^noteseventh]
+| [Google Maps Extractor](https://apify.com/compass/google-maps-extractor) | [Yelp Scraper](https://apify.com/tri_angle/yelp-scraper) | 
 
 ## 🛠️ Do you want to build your own scraper?
 
