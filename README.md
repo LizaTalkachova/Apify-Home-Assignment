@@ -1,14 +1,14 @@
 # Expedia & Hotels Review Scraper
 ## 🗒️ What is Expedia & Hotels Review Scraper? 
 
-With the help of the web scraper, you can extract reviews for different types of accomodation listed on **Expedia.com** and **Hotels.com**. Select any specific accomodation on either of portals, copy its URL, paste it on Apify Console, and enjoy a full report on all the reviews for the chosed accomodation.
+With the help of the web scraper, you can extract reviews for different types of accommodation listed on **Expedia.com** and **Hotels.com**. Select any specific accommodation on either of portals, copy its URL, paste it on Apify Console, and enjoy a full report on all the reviews for the chosen accommodation.
 
 Apify Console uses **API** to make a request to Expedia and Hotels portals databases and to extract information based on your criteria. 
 
 ## 📊 Why might you need the Expedia & Hotels Review Scraper? 
 
 * 🏨 **Reputation analysis before booking**: Quickly gather real guest reviews to make an informed decision.
-* 📈 **Competitive analysis for accomodation owners**: Collect customers' preferences to identify weaknesses, and improve service.
+* 📈 **Competitive analysis for accommodation owners**: Collect customers' preferences to identify weaknesses, and improve service.
 * 📝 **Industry insights for businesses and bloggers**: Analyze travel trends and create engaging content.
 * 🌴 **Enhancing customer service and marketing**: Use review data to optimize advertising.
 
@@ -16,9 +16,9 @@ Apify Console uses **API** to make a request to Expedia and Hotels portals datab
 
 |           |                 |
 |-----------|-----------------|
-|Review text|Accomodation name|
-|Review date|Accomodation rate|
-|Reviewer's name|Accomodation host's response|
+|Review text|Accommodation name|
+|Review date|Accommodation rate|
+|Reviewer's name|Accommodation host's response|
 |Duration and purpose of stay|Reviewer's country of origin| [^fourthnote]
 
 ## 💸 Is the Expedia & Hotels Review Scraper free to use?
@@ -27,29 +27,29 @@ This Actor is [**paid per result**](https://docs.apify.com/platform/actors/runni
 
 ## ⏯️ How to use the Expedia & Hotels Review Scraper?
 
-Apify Console is a perfect tool to use web scrapes as you don't need to go deep to technical details to received needed data. To start using the web scraper, do the following:
+Apify Console is a perfect tool to use web scrapes as you don't need to go deep into technical details to receive needed data. To start using the web scraper, do the following:
 
 1. [Create an account](https://console.apify.com/sign-up) in Apify Console. 
 2. Open the [Expedia & Hotels Review Scraper Actor](https://apify.com/tri_angle/expedia-hotels-com-reviews-scraper) [^firstnote].
-3. In the **Expedia or Hotels.com URLs** section, add as many accomodation URLs, as you want to get reviews for. 
+3. In the **Expedia or Hotels.com URLs** section, add as many accommodation URLs, as you want to get reviews for. 
 4. Click **Save & Start** [^secondnote]. The Actor starts collecting information.
-5. Wait until the run gets the **Successfull** status, and open the **Output** tab to see the results.
+5. Wait until the run gets the **Successful** status, and open the **Output** tab to see the results.
 
 ### Input
 
-You can either paste the accomodation URL and set up search criteria in settings, or use the JSON request. 
+You can either paste the accommodation URL and set up search criteria in settings, or use the JSON request. 
 
 ```
 {
-    "maxReviewsPerHotel": 3,
-    "sortBy": "Most recent",
+    "maxReviewsPerHotel": 3, //The number of records you will receive per run [^sixthnote]
+    "sortBy": "Most recent", //The sort order
     "startUrls": [
         {
-            "url": "https://euro.expedia.net/Prague-Hotels-Andaz-Prague.h71468304.Hotel-Information",
-            "method": "GET",
+            "url": "https://euro.expedia.net/Prague-Hotels-Andaz-Prague.h71468304.Hotel-Information", //The accommodation URL
+            "method": "GET", //The type of the endpoint
             "userData": {
-                "hotel": "ANDAZ PRAGUE, BY HYATT",
-                "doWeEndorseIt": "no opinion"
+                "hotel": "ANDAZ PRAGUE, BY HYATT", //The accommodation name
+                "doWeEndorseIt": "no opinion" //User data you want to put into the request [^seventhnote]
             }
         }
     ]
@@ -57,7 +57,7 @@ You can either paste the accomodation URL and set up search criteria in settings
 ```
 In this example, you request for 3 reviews for the Andaz Hotel in Prague starting from the most recent ones. 
 
-As an advanced setting, you can include `userData` to your API request that will be shown in the output as `customData`. You may use this data to easily identify reviews according to accomodation.
+As an advanced setting, you can include `userData` to your API request that will be shown in the output as `customData`. You may use this data to easily identify reviews according to accommodation.
 
 ### Output
 
@@ -198,7 +198,7 @@ You can select specific data to export, set a limit of records, set a number of 
 
 ## ❓ FAQ
 
-### My run works slowly or craches often. How can I make it work?
+### My run works slowly or crashes often. How can I make it work?
 
 Before running the Actor the next time, try to leverage resources such as memory. [Read more](https://docs.apify.com/platform/actors/running/usage-and-resources) about usage and resources.
 
@@ -210,11 +210,11 @@ Yes, you can define how often the Actor will run. Read more about [a schedule](h
 
 We store records of the last 10 runs of *all* the actors until you delete them. The rest is stored for the number of days according to your pricing plan. You can always upgrade the plan [in your Apify Console account](https://console.apify.com/billing/limits). Read more about [storages](https://docs.apify.com/platform/storage/usage#data-retention) so you never lose the data.
 
-### Is it legal to scrape accomodation reviews data?
+### Is it legal to scrape accommodation reviews data?
 
 Our [travel domain scrapers](https://apify.com/store/categories/travel) are ethical and do not extract any private user data that users chose not to show publicly. In the result, you still can see such information as users' location or email as long as they allowed the data to be shown on Expedia or Hotels portals. 
 
-Do not scrape personal data unless you have a legitimate reason for it. If you're unsure whether your reason is leitimate, we recommend you to consult lawyers. Read our blog post on [the legality of web scraping](https://blog.apify.com/is-web-scraping-legal/) and [ethical scrapting](https://blog.apify.com/what-is-ethical-web-scraping-and-how-do-you-do-it/) to learn more.
+Do not scrape personal data unless you have a legitimate reason for it. If you're unsure whether your reason is legitimate, we recommend you to consult lawyers. Read our blog post on [the legality of web scraping](https://blog.apify.com/is-web-scraping-legal/) and [ethical scraping](https://blog.apify.com/what-is-ethical-web-scraping-and-how-do-you-do-it/) to learn more.
 
 ### Can I use Apify API to work with the Actor?
 
@@ -243,7 +243,7 @@ You also can add your custom webhook to receive data once the Actor performs an 
 
 ## 🛠️ Do you want to build your own scraper?
 
-Are you missing data that you want to receive? You can always build your own scraper and customize it in any way you want! We have various [scraper templates](https://apify.com/templates) in Python, JavaScript, and TypeScript. Alternatively, you can write a scraper from scratch using the [Crawlee open-source library](https://crawlee.dev/?__hstc=160404322.714e024ea435b45bf9bb4b97d451f918.1740165708053.1741394980816.1741471921677.6&__hssc=160404322.1.1741471921677&__hsfp=2141725003&_gl=1*qmwqwp*_gcl_au*NjA3NjA4OTEwLjE3NDAxNjU3MDY.*_ga*ODIwNzM3OTg5LjE3NDAxNjU3MDc.*_ga_62P18XN9NS*MTc0MTU0OTQ4MC45LjEuMTc0MTU1MTIwMy4zMi4xLjE3MjIxMTcxMjc.). Keeping it private or publish in Apify Store is completely up to you. If you would like us to make a custom solution for you, don't hesitate to [reach out to us](https://apify.com/contact). 
+Are you missing data that you want to receive? You can always build your own scraper and customize it in any way you want! We have various [scraper templates](https://apify.com/templates) in Python, JavaScript, and TypeScript. Alternatively, you can write a scraper from scratch using the [Crawlee open-source library](https://crawlee.dev/?__hstc=160404322.714e024ea435b45bf9bb4b97d451f918.1740165708053.1741394980816.1741471921677.6&__hssc=160404322.1.1741471921677&__hsfp=2141725003&_gl=1*qmwqwp*_gcl_au*NjA3NjA4OTEwLjE3NDAxNjU3MDY.*_ga*ODIwNzM3OTg5LjE3NDAxNjU3MDc.*_ga_62P18XN9NS*MTc0MTU0OTQ4MC45LjEuMTc0MTU1MTIwMy4zMi4xLjE3MjIxMTcxMjc.). Keeping it private or publishing it in the Apify Store is completely up to you. If you would like us to make a custom solution for you, don't hesitate to [reach out to us](https://apify.com/contact). 
 
 ## 🩹 Do you need help?
 
@@ -251,6 +251,8 @@ We're constantly improving the performance of our Actors. If you have any techni
 
 [^firstnote]: The web scraper is currently named a bit differently, but I decided to stick to my version all over the README. 
 [^secondnote]: Once a user changes anything in the URL fields, the button renames as **Save & Start**. When a user opens the actor for the first time, he definitely needs to insert his URLs, so it would be the correct name of the button in this procedure.
-[^thirdnote]: I would include a screenshot of the table with the results, but it doesn't look quite attractive due to the absense of the data in some columns. It would also be good if I could define which columns to show in the table (I know it is possible for export and preview mode, but seems not in the showing mode).
+[^thirdnote]: I would include a screenshot of the table with the results, but it doesn't look quite attractive due to the absence of the data in some columns. It would also be good if I could define which columns to show in the table (I know it is possible for export and preview mode, but seems not in the showing mode).
 [^fourthnote]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
 [^fifthnote]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
+[^sixthnote]: Hereandafter, comments to JSON that explain each parameter.
+[^seventhnote]: I'm not sure the doWeEndorseIt parameter stands for the user data, but I had to leave a comment for the sake of consistency.
