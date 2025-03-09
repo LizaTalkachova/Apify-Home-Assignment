@@ -37,11 +37,11 @@ Apify Console is a perfect tool to use web scrapes as you don't need to go deep 
 
 ### Input
 
-You can either paste the accommodation URL and set up search criteria in settings, or use the JSON request. 
+You can either paste the accommodation URL and set up search criteria in settings, or use the JSON request. [^sixthnote] [^seventhnote]
 
 ```
 {
-    "maxReviewsPerHotel": 3, //The number of records you will receive per run [^sixthnote]
+    "maxReviewsPerHotel": 3, //The number of records you will receive per run
     "sortBy": "Most recent", //The sort order
     "startUrls": [
         {
@@ -49,13 +49,15 @@ You can either paste the accommodation URL and set up search criteria in setting
             "method": "GET", //The type of the endpoint
             "userData": {
                 "hotel": "ANDAZ PRAGUE, BY HYATT", //The accommodation name
-                "doWeEndorseIt": "no opinion" //User data you want to put into the request [^seventhnote]
+                "doWeEndorseIt": "no opinion" //User data you want to put into the request 
             }
         }
     ]
 }
 ```
-In this example, you request for 3 reviews for the Andaz Hotel in Prague starting from the most recent ones. 
+In this example, you request for 3 reviews for the Andaz Hotel in Prague starting from the most recent ones.
+> [!NOTE]
+> The sorting oder doesn't influence the records order in the output.
 
 As an advanced setting, you can include `userData` to your API request that will be shown in the output as `customData`. You may use this data to easily identify reviews according to accommodation.
 
@@ -196,11 +198,15 @@ You can export the output in many formats:
 
 You can select specific data to export, set a limit of records, set a number of records to skip, or unwind specific data in case if it is an array or an object. 
 
+### Limitations
+
+
+
 ## ❓ FAQ
 
 ### My run works slowly or crashes often. How can I make it work?
 
-Before running the Actor the next time, try to leverage resources such as memory. [Read more](https://docs.apify.com/platform/actors/running/usage-and-resources) about usage and resources.
+Before running the Actor the next time, try to leverage resources such as memory. You also can add a timeout.  [Read more](https://docs.apify.com/platform/actors/running/usage-and-resources) about usage and resources.
 
 ### Can I schedule the Actor?
 
@@ -254,5 +260,5 @@ We're constantly improving the performance of our Actors. If you have any techni
 [^thirdnote]: I would include a screenshot of the table with the results, but it doesn't look quite attractive due to the absence of the data in some columns. It would also be good if I could define which columns to show in the table (I know it is possible for export and preview mode, but seems not in the showing mode).
 [^fourthnote]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
 [^fifthnote]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
-[^sixthnote]: Hereandafter, comments to JSON that explain each parameter.
+[^sixthnote]: In the JSON code block, I left comments on each parameter to let users understand what the input means.
 [^seventhnote]: I'm not sure the doWeEndorseIt parameter stands for the user data, but I had to leave a comment for the sake of consistency.
