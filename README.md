@@ -1,4 +1,4 @@
-# MyPersonal
+# Expedia & Hotels Review Scraper
 ## What is Expedia & Hotels Review Scraper? 
 
 With the help of the web scraper, you can extract reviews for different types of accomodation listed on Expedia.com and Hotels.com. Select any specific accomodation on either of portals, copy its URL, paste it on Apify Console, and enjoy a full report on all the reviews for the chosed accomodation.
