@@ -7,10 +7,10 @@ Apify Console uses API to make a request to Expedia and Hotels portals databases
 
 ## Why might you need the Expedia & Hotels Review Scraper? 
 
-🏨 **Reputation analysis before booking**: Quickly gather real guest reviews to make an informed decision.
-📈 **Competitive analysis for accomodation owners**: Collect customers' preferences to identify weaknesses, and improve service.
-📝 **Industry insights for businesses and bloggers**: Analyze travel trends and create engaging content.
-🌴 **Enhancing customer service and marketing**: Use review data to optimize advertising.
+* 🏨 **Reputation analysis before booking**: Quickly gather real guest reviews to make an informed decision.
+* 📈 **Competitive analysis for accomodation owners**: Collect customers' preferences to identify weaknesses, and improve service.
+* 📝 **Industry insights for businesses and bloggers**: Analyze travel trends and create engaging content.
+* 🌴 **Enhancing customer service and marketing**: Use review data to optimize advertising.
 
 ## What data can you receive via the Expedia & Hotels Review Scraper?
 
@@ -27,7 +27,7 @@ Apify Console is a perfect tool to use web scrapes as you don't need to go deep 
 2. Open the [Expedia & Hotels Review Scraper](https://apify.com/tri_angle/expedia-hotels-com-reviews-scraper) actor [^firstnote].
 3. In the **Expedia or Hotels.com URLs** section, add as many accomodation URLs, as you want to get reviews for. 
 4. Click **Save & Start** [^secondnote]. The actor starts collecting information.
-5. Wait until the run gets the **Successfull* status, and open the **Output** tab to see the results.
+5. Wait until the run gets the **Successfull** status, and open the **Output** tab to see the results.
 
 ### Input
 
