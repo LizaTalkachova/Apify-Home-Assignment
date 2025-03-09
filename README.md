@@ -1,7 +1,7 @@
 # Expedia & Hotels Review Scraper
 ## 🗒️ What is Expedia & Hotels Review Scraper? 
 
-With the help of the web scraper, you can extract reviews for different types of accommodation listed on **Expedia.com** and **Hotels.com**. Select any specific accommodation on either of portals, copy its URL, paste it on Apify Console, and enjoy a full report on all the reviews for the chosen accommodation.
+With the help of the web scraper, you can extract reviews for different types of accommodation listed on **Expedia.com** and **Hotels.com**. Select any specific accommodation on either portal, copy its URL, paste it on Apify Console, and enjoy a full report on all the reviews for the chosen accommodation.
 
 Apify Console uses **API** to make a request to Expedia and Hotels portals databases and to extract information based on your criteria. 
 
@@ -12,7 +12,7 @@ Apify Console uses **API** to make a request to Expedia and Hotels portals datab
 * 📝 **Industry insights for businesses and bloggers**: Analyze travel trends and create engaging content.
 * 🌴 **Enhancing customer service and marketing**: Use review data to optimize advertising.
 
-## ℹ️ What data can you receive via the Expedia & Hotels Review Scraper? [^notefirst]
+## ℹ️ What data does this scraper extract? [^notefirst]
 
 |           |                 |
 |-----------|-----------------|
@@ -57,11 +57,11 @@ You can either paste the accommodation URL and set up search criteria in setting
 ```
 In this example, you request for 3 reviews for the Andaz Hotel in Prague starting from the most recent ones.
 > [!NOTE]
-> The sorting oder doesn't influence the records order in the output.
+> The sorting order doesn't affect the order of records in the output.
 
 As an advanced setting, you can include `userData` to your API request that will be shown in the output as `customData`. You may use this data to easily identify reviews according to accommodation.
 
-### Output
+### Output [^lastnote]
 
 Output is available as a raw JSON or aggregated data shown in a table. Here you see one of three reviews for the Andaz Hotel in the JSON format. [^notesixth]
 
@@ -210,7 +210,7 @@ Yes, you can define how often the Actor will run. Read more about [a schedule](h
 
 ### How long is the output data available in Apify Console?
 
-We store records of the last 10 runs of *all* the actors until you delete them. The rest is stored for the number of days according to your pricing plan. You can always upgrade the plan [in your Apify Console account](https://console.apify.com/billing/limits). Read more about [storages](https://docs.apify.com/platform/storage/usage#data-retention) so you never lose the data.
+We store records of the last 10 runs of *all* actors until you delete them. The rest is stored for the number of days according to your pricing plan. You can always upgrade the plan [in your Apify Console account](https://console.apify.com/billing/limits). Read more about [storages](https://docs.apify.com/platform/storage/usage#data-retention) so you never lose the data.
 
 ### Is it legal to scrape accommodation reviews data?
 
@@ -257,10 +257,11 @@ Are you missing data that you want to receive? You can always build your own scr
 
 We're constantly improving the performance of our Actors. If you have any technical feedback or face a bug or malfunction in the Actor's work, feel free to report it by creating a new issue [on the **Issues** tab in Apify Console](https://console.apify.com/actors/4zyibEJ79jE7VXIpA/issues).
 
-[^notefirst]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
+[^notefirst]: As far as I know, GitHub doesn't support tables without headers, so I left it as it is (with empty headers)ю
 [^notesecond]: The web scraper is currently named a bit differently, but I decided to stick to my version all over the README. 
 [^notethird]: Once a user changes anything in the URL fields, the button renames as **Save & Start**. When a user opens the actor for the first time, he definitely needs to insert his URLs, so it would be the correct name of the button in this procedure.
 [^notefourth]: In the JSON code block, I left comments on each parameter to let users understand what the input means.
 [^notefifth]: I'm not sure the doWeEndorseIt parameter stands for the user data, but I had to leave a comment for the sake of consistency.
 [^notesixth]: I would include a screenshot of the table with the results, but it doesn't look quite attractive due to the absence of the data in some columns. It would also be good if I could define which columns to show in the table (I know it is possible for export and preview mode, but seems not in the showing mode).
 [^noteseventh]: As far as I know, GitHub doesn't support tables without headers, so I had to leave it as it is (empty headers).
+[^lastnote]: I would also add a table with descriptions of some output parameters to let users understand data better.
