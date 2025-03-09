@@ -19,14 +19,18 @@ Apify Console uses API to make a request to Expedia and Hotels portals databases
 | Reviewer's name | Accomodation host's response |
 | Duration and purpose of stay | Reviewer's country of origin |
 
+## Is the Expedia & Hotels Review Scraper free to use?
+
+This Actor is [**paid per result**](https://docs.apify.com/platform/actors/running/actors-in-store#pay-per-result): it charges $1.00 for each 1,000 items in the output. You don't pay anything for using Apify Console.
+
 ## How to use the Expedia & Hotels Review Scraper?
 
 Apify Console is a perfect tool to use web scrapes as you don't need to go deep to technical details to received needed data. To start using the web scraper, do the following:
 
 1. [Create an account](https://console.apify.com/sign-up) in Apify Console. 
-2. Open the [Expedia & Hotels Review Scraper](https://apify.com/tri_angle/expedia-hotels-com-reviews-scraper) actor [^firstnote].
+2. Open the [Expedia & Hotels Review Scraper Actor](https://apify.com/tri_angle/expedia-hotels-com-reviews-scraper) [^firstnote].
 3. In the **Expedia or Hotels.com URLs** section, add as many accomodation URLs, as you want to get reviews for. 
-4. Click **Save & Start** [^secondnote]. The actor starts collecting information.
+4. Click **Save & Start** [^secondnote]. The Actor starts collecting information.
 5. Wait until the run gets the **Successfull** status, and open the **Output** tab to see the results.
 
 ### Input
@@ -179,7 +183,48 @@ Output is available as a raw JSON or aggregated data shown in a table. Here you 
     }
 ]
 ```
+You can export the output in many formats:
+* JSON
+* CSV
+* XML
+* Excel
+* HTML Table
+* RSS
+* JSONL
+
+You can select specific data to export, set a limit of records, set a number of records to skip, or unwind specific data in case if it is an array or an object. 
+
+## FAQ
+
+### My run works slowly or craches often. How can I make it work?
+
+Before running the Actor the next time, try to leverage resources such as memory. [Read more](https://docs.apify.com/platform/actors/running/usage-and-resources) about usage and resources.
+
+### Is it legal to scrape accomodation reviews data?
+
+Our [travel domain scrapers](https://apify.com/store/categories/travel) are ethical and do not extract any private user data that users chose not to show publicly. In the result, you still can see such information as users' location or email as long as they allowed the data to be shown on Expedia or Hotels portals. 
+
+Do not scrape personal data unless you have a legitimate reason for it. If you're unsure whether your reason is leitimate, we recommend you to consult lawyers. Read our blog post on [the legality of web scraping](https://blog.apify.com/is-web-scraping-legal/) and [ethical scrapting](https://blog.apify.com/what-is-ethical-web-scraping-and-how-do-you-do-it/) to learn more.
+
+### 
+
+## Scrapers you might also like
+
+| [Booking Reviews Scraper](https://apify.com/voyager/booking-reviews-scraper) | [Tripadvisor Reviews Scraper](https://apify.com/maxcopell/tripadvisor-reviews) |
+| [Booking Scraper](https://apify.com/voyager/booking-scraper) | [Airbnb Scraper](https://apify.com/tri_angle/airbnb-scraper) |
+| [Skyscanner Flight✈️](https://apify.com/jupri/skyscanner-flight) | [Ryanair Scraper](https://apify.com/epctex/ryanair-scraper) |
+| [Google Maps Extractor](https://apify.com/compass/google-maps-extractor) | [Yelp Scraper](https://apify.com/tri_angle/yelp-scraper) |
+
+## Do you want to build your own scraper?
+
+Are you missing data that you want to receive? You can always build your own scraper and customize it in any way you want! We have various [scraper templates](https://apify.com/templates) in Python, JavaScript, and TypeScript. Alternatively, you can write a scraper from scratch using the [Crawlee open-source library](https://crawlee.dev/?__hstc=160404322.714e024ea435b45bf9bb4b97d451f918.1740165708053.1741394980816.1741471921677.6&__hssc=160404322.1.1741471921677&__hsfp=2141725003&_gl=1*qmwqwp*_gcl_au*NjA3NjA4OTEwLjE3NDAxNjU3MDY.*_ga*ODIwNzM3OTg5LjE3NDAxNjU3MDc.*_ga_62P18XN9NS*MTc0MTU0OTQ4MC45LjEuMTc0MTU1MTIwMy4zMi4xLjE3MjIxMTcxMjc.). Keeping it private or publish in Apify Store is completely up to you. If you would like us to make a custom solution for you, don't hesitate to [reach out to us](https://apify.com/contact). 
+
+## Do you need help?
+
+We're constantly improving the performance of our Actors. If you have any technical feedback or face a bug or malfunction in the Actor's work, feel free to report it by creating a new issue [on the **Issues** tab in Apify Console](https://console.apify.com/actors/4zyibEJ79jE7VXIpA/issues).
 
 [^firstnote]: The web scraper is currently named a bit differently, but I decided to stick to my version all over the README. 
 [^secondnote]: Once a user changes anything in the URL fields, the button renames as **Save & Start**. When a user opens the actor for the first time, he definitely needs to insert his URLs, so it would be the correct name of the button in this procedure.
 [^thirdnote]: I would include a screenshot of the table with the results, but it doesn't look quite attractive due to the absense of the data in some columns. It would also be good if I could define which columns to show in the table (I know it is possible for export and preview mode, but seems not in the showing mode).
+
+
