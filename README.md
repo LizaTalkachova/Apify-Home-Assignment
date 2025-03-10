@@ -181,7 +181,7 @@ Output is available as a raw JSON or aggregated data shown in a table. Here you 
         "hotelId": "71468304",
         "reviewPosition": 1,
         "customData": {
-            "hotel": "Hotel Quirinale",
+            "hotel": "ANDAZ PRAGUE, BY HYATT",
             "doWeEndorseIt": "no opinion"
         }
     }
